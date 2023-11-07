@@ -22,11 +22,11 @@ const meta: Meta<typeof Modal> = {
             description: 'Provide the contents of your Modal'
         },
     },
-} as Meta;
+} satisfies Meta<typeof Modal>;
 
 export default meta;
 
-type Story = StoryObj<typeof Modal>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {},

@@ -39,7 +39,7 @@ const meta: Meta<typeof Select> = {
             defaultValue: false,
         },
     },
-} as Meta;
+} satisfies Meta<typeof Select>;
 
 export default meta;
 
@@ -49,7 +49,7 @@ const options = [
     { value: 'option3', label: 'Option 3' },
 ];
 
-type Story = StoryObj<typeof Select>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {

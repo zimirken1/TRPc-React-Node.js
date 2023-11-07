@@ -36,11 +36,11 @@ const meta: Meta<typeof Button> = {
             defaultValue: false,
         },
     },
-} as Meta;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {

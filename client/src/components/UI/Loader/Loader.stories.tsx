@@ -13,11 +13,11 @@ const meta: Meta<typeof Loader> = {
             control: 'text',
         },
     },
-} as Meta;
+} satisfies Meta<typeof Loader>;
 
 export default meta;
 
-type Story = StoryObj<typeof Loader>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {

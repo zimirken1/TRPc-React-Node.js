@@ -1,8 +1,14 @@
 import React from 'react';
 import styles from './Loader.module.scss';
 
-const Loader: React.FC = () => {
-    return <div className={styles.loader}></div>;
+interface LoaderProps {
+    className?: string;
+}
+
+const Loader: React.FC<LoaderProps> = ({ className }) => {
+    const loaderClasses = `${styles.loader} ${className || ''}`;
+
+    return <div className={loaderClasses}></div>;
 };
 
 export default Loader;

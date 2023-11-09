@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                 {error && <span>Error fetching top cryptos</span>}
                 {topCryptos.map((crypto) => (
                     <div key={crypto.id} className={styles.crypto}>
-                        <strong>{crypto.symbol}</strong>: $
+                        <strong id={'crypto'}>{crypto.symbol}</strong>: $
                         {formatValue(crypto.priceUsd)}
                     </div>
                 ))}

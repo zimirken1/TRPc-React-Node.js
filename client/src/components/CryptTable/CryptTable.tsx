@@ -185,7 +185,7 @@ const CryptTable: React.FC = () => {
                             ))}
                         </tbody>
                     </table>
-                    <div className={styles.pagination}>
+                    <div className={styles.pagination} id={'pagination'}>
                         <Button
                             text={'Previous'}
                             disabled={page === 1}

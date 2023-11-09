@@ -19,7 +19,7 @@ const PortfolioList: React.FC = () => {
     return (
         <div>
             <h3 className={styles.header}>Your Coins</h3>
-            <div className={styles.portfolioListContainer}>
+            <div className={styles.portfolioListContainer} id={'portfolioList'}>
                 <ul>
                     {portfolio.map((coin) => (
                         <li key={coin.id}>

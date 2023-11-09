@@ -8,7 +8,7 @@ interface LoaderProps {
 const Loader: React.FC<LoaderProps> = ({ className }) => {
     const loaderClasses = `${styles.loader} ${className || ''}`;
 
-    return <div className={loaderClasses}></div>;
+    return <div className={loaderClasses} id={'loader'}></div>;
 };
 
 export default Loader;

@@ -82,7 +82,7 @@ const CryptInfo: React.FC = () => {
     if (error) return <div>Error fetching data</div>;
 
     return (
-        <div className={styles.cryptInfoContainer}>
+        <div className={styles.cryptInfoContainer} id={'cryptInfoContainer'}>
             <Modal show={isModalOpen} onClose={handleCloseModal}>
                 <h2>Success!</h2>
                 <p>
@@ -99,7 +99,7 @@ const CryptInfo: React.FC = () => {
                         alt={symbol}
                         onError={handleImageError}
                     />
-                    <h2>
+                    <h2 id={'title'}>
                         {name} ({symbol})
                     </h2>
                     <p>Rank: {rank}</p>
@@ -133,7 +133,7 @@ const CryptInfo: React.FC = () => {
                     </div>
                 </div>
             )}
-            <div className={styles.chartContainer}>
+            <div className={styles.chartContainer} id={'chartContainer'}>
                 <div>
                     <label htmlFor="startDate-select">Start Date: </label>
                     <Select
@@ -150,7 +150,7 @@ const CryptInfo: React.FC = () => {
                         }}
                     />
                 </div>
-                <div>
+                <div id={'chart'}>
                     <CryptHistoryChart
                         id={`${id}`}
                         interval={interval}

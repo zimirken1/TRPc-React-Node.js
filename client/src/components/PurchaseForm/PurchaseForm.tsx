@@ -49,7 +49,7 @@ const PurchaseForm: React.FC<PurchaseFormProps> = ({ crypto, onSubmit }) => {
                         }}
                     />
                 </div>
-                {error && <p className={styles.error}>{error}</p>}
+                {error && <p className={styles.error} id={'error'}>{error}</p>}
                 <div>
                     <label>Total:</label>
                     <span>

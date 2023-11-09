@@ -59,6 +59,7 @@ const Portfolio: React.FC = () => {
             <div
                 onClick={handleOpenModal}
                 className={styles.portfolioContainer}
+                id={'portfolio'}
             >
                 <h2>Your Portfolio</h2>
                 <p>
